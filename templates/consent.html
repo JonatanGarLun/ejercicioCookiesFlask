@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link type="text/css" href="../static/index.css">
-    <title>Cookies</title>
+    <title>Consentimiento</title>
 </head>
 <body>
 
     <h1>Cookies en nuestro sitio</h1>
-    <p>En nuestro sitio web utilizamos cookies para mejorar tu experiencia de navegación, analizar el tráfico y personalizar el contenido. Al continuar navegando, aceptas el uso de cookies conforme a nuestra política de privacidad. Puedes configurar o rechazar el uso de cookies en cualquier momento desde la configuración de tu navegador. Para más detalles, <a href="politica.html">consulta nuestra política de cookies</a>.</p>
+    <p>En nuestro sitio web utilizamos cookies para mejorar tu experiencia de navegación, analizar el tráfico y personalizar el contenido. Al continuar navegando, aceptas el uso de cookies conforme a nuestra política de privacidad. Puedes configurar o rechazar el uso de cookies en cualquier momento desde la configuración de tu navegador. Para más detalles, <a href="{{ url_for('privacy_policy') }}">consulta nuestra política de cookies</a>.</p>
 
-    <form method="post" action="{{ url_for('formulario') }}">
+    <form method="post" action="{{ url_for('consent') }}">
         <label for="option">Su elección:</label>
         <select id="option" name="option" required>
             <option value="accept_all">Aceptar todas</option>
