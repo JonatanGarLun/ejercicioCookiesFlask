@@ -1,5 +1,5 @@
 from flask import Flask, make_response, request, render_template, url_for, redirect
-
+# Las respuestas a las preguntas están en el readme.md
 app = Flask(__name__)
 
 @app.route('/set_cookie')
